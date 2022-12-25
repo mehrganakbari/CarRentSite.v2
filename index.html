@@ -1,13 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
-  </head>
-  <body>
-    
-    <script type="module" src="src/scripts/main.js"></script>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="images/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CarRentalSite</title>
+</head>
+
+<body class="bg-[#eee] font">
+  <!-- navbar -->
+  <nav>
+    <div class="bg-blue-600 text-white text-xl py-3 px-10 flex flex-col xs:flex-row justify-between">
+      <div class=""><a href="">LOGOIMG</a></div>
+      <div class="">company name</div>
+    </div>
+  </nav>
+  <!-- Account definition box -->
+  <section id="AccountDefinitionBox" class="bg-black bg-opacity-80 left-0 top-0 fixed w-full h-full z-50">
+    <div class="bg-white rounded-2xl w-[80%] my-14 mx-auto h-[500px] p-5">
+      <form action="#" id="form" autocomplete="off">
+        <h1 class="text-[#aaa] text-xl text-center pt-5">definition your Account</h1>
+        <div class="my-5 md:m-10 py-3 px-5 md:px-10 bg-white border border-blue-600 text-[#aaa] rounded-md">
+          <div
+            class="h-[300px] md:h-[250px] overflow-y-scroll xs:pr-5 md:pr-10 scrollbar-thin scrollbar-corner-orange-500 scrollbar-track-transparent scrollbar-thumb-orange-500 scrollbar-corner-rounded-full scrollbar-thumb-rounded-full scrollbar-track-rounded-full">
+            <!-- First name -->
+            <div class="my-3 lg:flex items-center">
+              <p class="lg:w-52 pb-2 lg:pb-0 text-lg text-center lg:text-start">First name</p>
+              <div class="flex gap-x-3 w-full">
+                <input type="text" autocomplete="off" name="lb-Fname" id="lb-Fname"
+                  class="w-full py-2 px-5 border lg:border-0 lg:border-b border-blue-900 focus:outline-none">
+              </div>
+            </div>
+            <!-- last name -->
+            <div class="my-3 lg:flex items-center">
+              <p class="lg:w-52 pb-2 lg:pb-0 text-lg text-center lg:text-start">last name</p>
+              <div class="flex gap-x-3 w-full">
+                <input type="text" autocomplete="off" name="lb-Lname" id="lb-Lname"
+                  class="w-full py-2 px-5 border lg:border-0 lg:border-b border-blue-900 focus:outline-none">
+              </div>
+            </div>
+            <!-- Age -->
+            <div class="my-3 lg:flex items-center">
+              <p class="lg:w-52 pb-2 lg:pb-0 text-lg text-center lg:text-start">Age</p>
+              <div class="flex gap-x-3 w-full">
+                <input type="text" autocomplete="off" name="lb-Age" id="lb-Age"
+                  class="w-full py-2 px-5 border lg:border-0 lg:border-b border-blue-900 focus:outline-none">
+              </div>
+            </div>
+            <!-- National Code -->
+            <div class="my-3 lg:flex items-center">
+              <p class="lg:w-52 pb-2 lg:pb-0 text-lg text-center lg:text-start">National Code</p>
+              <div class="flex gap-x-3 w-full">
+                <input type="text" autocomplete="off" name="lb-NationalCode" id="lb-NationalCode"
+                  class="w-full py-2 px-5 border lg:border-0 lg:border-b border-blue-900 focus:outline-none">
+              </div>
+            </div>
+            <!-- Phone number -->
+            <div class="my-3 lg:flex items-center">
+              <p class="lg:w-52 pb-2 lg:pb-0 text-lg text-center lg:text-start">P-number</p>
+              <div class="flex gap-x-3 w-full">
+                <input type="text" autocomplete="off" name="lb-Pnumber" id="lb-Pnumber"
+                  class="w-full py-2 px-5 border lg:border-0 lg:border-b border-blue-900 focus:outline-none">
+              </div>
+            </div>
+            <!-- E-mail -->
+            <div class="my-3 lg:flex items-center">
+              <p class="lg:w-52 pb-2 lg:pb-0 text-lg text-center lg:text-start">E-mail</p>
+              <div class="flex gap-x-3 w-full">
+                <input type="text" autocomplete="off" name="lb-E-mail" id="lb-E-mail"
+                  class="w-full py-2 px-5 border lg:border-0 lg:border-b border-blue-900 focus:outline-none">
+              </div>
+            </div>
+            <!-- Password -->
+            <div class="my-3 lg:flex items-center">
+              <p class="lg:w-52 pb-2 lg:pb-0 text-lg text-center lg:text-start">Password</p>
+              <div class="flex gap-x-3 w-full">
+                <input type="text" autocomplete="off" name="lb-psw" id="lb-psw"
+                  class="w-full py-2 px-5 border lg:border-0 lg:border-b border-blue-900 focus:outline-none">
+              </div>
+            </div>
+            <!-- confirm Password -->
+            <div class="my-3 lg:flex items-center">
+              <p class="lg:w-52 pb-2 lg:pb-0 text-lg text-center lg:text-start">CN Password</p>
+              <div class="flex gap-x-3 w-full">
+                <input type="text" autocomplete="off" name="lb-CnPsw" id="lb-CnPsw"
+                  class="w-full py-2 px-5 border lg:border-0 lg:border-b border-blue-900 focus:outline-none">
+              </div>
+            </div>
+          </div>
+          <input type="submit" class="text-white bg-blue-900 py-2 rounded-md w-full my-3 cursor-pointer" value="definition">
+        </div>
+      </form>
+    </div>
+  </section>
+  <script type="module" src="src/scripts/main.js"></script>
+  <script src="src/scripts/validate.js"></script>
+</body>
+
 </html>
